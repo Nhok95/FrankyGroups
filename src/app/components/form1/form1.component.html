@@ -1,0 +1,33 @@
+<h2 style="color:white">Tamaño y nombre</h2>
+
+<div class="ui-fluid">
+    <div class= "ui-g" >
+        <div class= "ui-g-12 ui-md-6 ui-lg-12">
+
+            <div class= "ui-g-12 ui-md-6 ui-lg-6">
+                <span class="ui-float-label">
+                    <input [(ngModel)]="nombre" id="float-input" type="text" pInputText> 
+                    <label for="float-input">Nombre grupos</label>
+                </span>
+            </div>
+            
+            <div class= "ui-g-12 ui-md-6 ui-lg-6">
+                <span class="ui-float-label">
+                    <p-spinner [(ngModel)]="tamanyo" for="float-spinner" min=1></p-spinner>
+                    <label for="float-spinner">Tamaño del grupo</label>
+                </span>
+            </div> 
+
+            <div class= "ui-g-4 ui-md-6 ui-lg-4 "> </div>
+
+            <div class= "ui-g-4 ui-md-6 ui-lg-4 "> 
+                <button pButton type="button" label="Crear" class="ui-button-rounded" (click)='crearButton()'></button>
+            </div>
+
+            <div class= "ui-g-4 ui-md-6 ui-lg-4 "></div>
+        </div>
+    </div>
+</div>
+
+
+
